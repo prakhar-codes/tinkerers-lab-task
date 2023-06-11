@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.153.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.153.0/examples/jsm/"
+        }
+    }
+    </script>
+    <title>Tinkerer's Lab Task</title>
+</head>
+<body>
+    <nav class="navbar" id="myNavbar">
+        <a href="#" class="active">Tinkerers' Lab Task</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="scrollToSection('#about')">About Me </button>
+            <button class= "dropbtn" onclick="scrollToSection('#model')">3D Model</button>
+            <button class="dropbtn" onclick="window.open('https://github.com/prakhar-codes/tinkerers-lab-task');">Github</button>
+            <div class="dropdown-content">
+                <a href="#about">About Me</a>
+                <a href="#model">3D Model</a>
+                <a href="https://github.com/prakhar-codes/tinkerers-lab-task">Github</a>
+            </div>
+        </div>
+        <a href="#" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <section class="portfolio-section" id="about">
+        <div class="section-heading">
+            <h1 class="title">About Me</h1>
+        </div>
+        <img src="images/myphoto.jpg" alt="Profile Picture" class="profile-image">
+        <h1 class="name">Prakhar Saxena</h1>
+        <h3 class="branch">B.Tech Engineering Physics, 2022-26</h3>
+        <div class="subsection">
+            <h3>Club Experience</h3>
+            <ul class="subsection-content">
+                <li>Vibes, IITH - Member</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Skills</h3>
+            <ul class="subsection-content">
+                <li>C Language</li>
+                <li>Java and Object Oriented Programming</li>
+                <li>HTML, CSS, Bootstrap, Javascript</li>
+                <li>Python and Libraries - Numpy, Pandas, Matplotlib, Scikit-learn</li>
+                <li>Arduino Programming</li>
+                <li>Video Editing</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Previous Experience</h3>
+            <ul class="subsection-content">
+                <li>Coding Diary - A Fullstack project I made with Firebase Database for keeping a
+                    record of my progress in coding and taking notes while I study</li>
+                <li>Alumni Cell, IITH Website - Created frontend for Alumni Cell's website as a part of
+                    task for cell recruitment for Web coordinator.</li>
+                <li>Image Classification with CNN in Keras - I have made a project on 2-layer CNN for
+                    binary classification of images as cats or dogs.</li>
+                <li>I've worked with Kaggle datasets and can apply basic Regression and Classification
+                    models in Python.</li>
+                <li>Project Batman - A Project I made in school under a competition organized by
+                    KVRSS, Hyderabad wherein I designed wearable gears for blinds. I used Arduino
+                    microcontroller and other equipments for that.
+                </li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Extracurriculars</h3>
+            <ul class="subsection-content">
+                <li>Hobbies : Singing, Drawing</li>
+                <li>Sports : Football, Cricket, Badminton</li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <section class="model-section" id="model">
+        <div class="section-heading">
+            <h1 class="title">3D Model</h1>
+        </div>
+        <div class="model-container">
+            <canvas class="webgl"></canvas>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p class="footer-text">Designed by Prakkhar Saxena for Tinkerers' Lab, IITH Task for Software Development Core domain</p>
+    </section>
+
+  <script src="script.js"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
